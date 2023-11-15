@@ -6,8 +6,14 @@
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.005);
+    transition: background-color 0.3s ease;
 }
+
+.navbar.scrolled {
+    background-color: black;
+}
+
 
 .logo {
     position: fixed;
