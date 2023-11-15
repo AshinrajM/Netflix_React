@@ -5,7 +5,7 @@
 
 .posters {
     display: flex;
-    padding: 20px;
+    padding: 20px 0px 10px 0px;
     overflow-x: scroll;
     overflow-y: hidden;
 }
@@ -15,6 +15,13 @@
 }
 
 .poster {
-    max-height: 250px;
-    margin-right: 20px;
+    max-height: 220px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.smallPoster {
+    max-height: 100px;
+    margin-right: 10px;
+    cursor: pointer;
 }

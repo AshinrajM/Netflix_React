@@ -1,16 +1,16 @@
 .banner {
-    background-image: url('https://occ-0-5690-3663.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABRIeThIOCJcFfjVQ-_pndLPNEvJDVRqyac_BFnQ5YXtMICvrgbx2vx1yx0BpL1LTLIoie7qZRpyaenG1aJmXMC8Dwon_KCmHzsMq.jpg?r=a85');
+    /* background-image: url('https://occ-0-5690-3663.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABRIeThIOCJcFfjVQ-_pndLPNEvJDVRqyac_BFnQ5YXtMICvrgbx2vx1yx0BpL1LTLIoie7qZRpyaenG1aJmXMC8Dwon_KCmHzsMq.jpg?r=a85'); */
     background-size: cover;
-    height: 448px;
+    height: 500px;
     color: white;
     margin-bottom: 10px;
 
 }
 
 .content {
-    padding-top: 140px;
+    padding-top: 200px;
     height: 100px;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .title {
@@ -39,8 +39,13 @@
     padding-top: 1rem;
     font-size: 1rem;
     height: 80px;
-    max-width: 360px;
-
+    max-width: 400px;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /* Set the number of lines to display before adding ellipsis */
+    -webkit-box-orient: vertical;
 }
 
 .button:hover {

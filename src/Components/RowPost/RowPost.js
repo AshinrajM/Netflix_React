@@ -1,20 +1,27 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './RowPost.css'
-function RowPost() {
+import {imageUrl} from '../../constants/constants'
+import axios from '../../axios'
+
+
+function RowPost(props) {
+
+    const [movies, setMovies] = useState([])
+    useEffect(() => {
+        axios.get(props.url).then((response) => {
+            console.log(response.data);
+            setMovies(response.data.results)
+        }).catch((err => {
+            alert("Network")
+        }))
+    })
     return (
         <div className='row'>
-            <h2>Title</h2>
+            <h2>{props.title}</h2>
             <div className='posters'>
-                <img className='poster' src="https://www.adgully.com/img/400/202011/image002-2.jpg" alt="poster" />
-                <img className='poster' src="https://www.adgully.com/img/400/202011/image002-2.jpg" alt="poster" />
-                <img className='poster' src="https://www.adgully.com/img/400/202011/image002-2.jpg" alt="poster" />
-                <img className='poster' src="https://www.adgully.com/img/400/202011/image002-2.jpg" alt="poster" />
-                <img className='poster' src="https://www.adgully.com/img/400/202011/image002-2.jpg" alt="poster" />
-                <img className='poster' src="https://www.adgully.com/img/400/202011/image002-2.jpg" alt="poster" />
-                <img className='poster' src="https://www.adgully.com/img/400/202011/image002-2.jpg" alt="poster" />
-                <img className='poster' src="https://www.adgully.com/img/400/202011/image002-2.jpg" alt="poster" />
-                <img className='poster' src="https://www.adgully.com/img/400/202011/image002-2.jpg" alt="poster" />
-                <img className='poster' src="https://www.adgully.com/img/400/202011/image002-2.jpg" alt="poster" />
+                {movies.map((obj) =>
+                    <img className={props.isSmall ? 'smallPoster' : 'poster'} src={`${imageUrl + obj.backdrop_path}`} alt="poster" />
+                )}
             </div>
         </div>
     )
