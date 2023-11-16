@@ -28,11 +28,11 @@
 
 .poster:hover {
     transform: scale(1.1);
-    transition: 500ms;
-    transition-delay: 0.25s;
+    transition: 1500ms;
+    /* transition-delay: 0.25s; */
 }
 
 .smallPoster:hover {
     transform: scale(1.15);
-    transition: 500ms;
+    transition: 1500ms;
 }
