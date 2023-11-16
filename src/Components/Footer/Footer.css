@@ -1,0 +1,48 @@
+.footer {
+    display: flex;
+}
+
+li {
+    margin-bottom: 10px;
+    margin-left: 150px;
+    text-decoration: none;
+}
+
+.first {
+    color: white;
+}
+
+.first ol {
+    list-style-type: none;
+}
+
+.service {
+    margin-left: 150px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 6px;
+    border: white 1px solid;
+    border-radius: 0px;
+    background-color: rgb(17, 17, 17);
+    color: azure;
+}
+
+.social {
+    display: flex;
+    color: white;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    gap: 25px;
+
+}
+
+.social i {
+    font-size: 25px;
+}
+
+h6 {
+    color: white;
+    margin-left: 150px;
+    margin-bottom: 10px;
+}

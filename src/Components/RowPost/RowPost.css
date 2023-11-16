@@ -27,8 +27,11 @@
 }
 
 .poster:hover {
-    transform: scale(1.05)
-}
-.smallPoster:hover{
     transform: scale(1.1);
+    transition: 500ms;
+}
+
+.smallPoster:hover {
+    transform: scale(1.15);
+    transition: 500ms;
 }

@@ -3,6 +3,8 @@ import './App.css'
 import { originals, action, romance, horror, comedy, trending } from './urls';
 import Banner from './Components/Banner/Banner';
 import RowPost from './Components/RowPost/RowPost';
+import Footer from './Components/Footer/Footer';
+
 
 function App() {
   return (
@@ -14,9 +16,10 @@ function App() {
       <RowPost url={action} title='Action' isSmall />
       <RowPost url={comedy} title='Comedy' isSmall />
       <RowPost url={horror} title='Horror' isSmall />
-      <RowPost url={trending} title='Trending'/>
+      <RowPost url={trending} title='Trending' isSmall />
+      <Footer />
     </div>
-  );
-}
+  )
+};
 
 export default App;
